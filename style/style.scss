@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    header{
+        height: 100px;
+        display: flex;
+        background-color: rgb(65, 94, 41);
+        justify-content:center ;
+        color: white;
+        z-index: 5;
+        nav{
+            display: flex;
+            width: 80%;
+            align-items: center;
+            justify-content: space-between;
+            #logo{
+                font-size: 2vw;
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    padding: 1px;
+                    margin: 1vw 1vw 1vw 1vw;
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        #content{
+            display: flex;
+            height: auto;
+            background-color: rgb(253, 243, 230);
+            justify-content: space-evenly;
+            .content_div{
+                display: flex;
+                justify-content: center;/*水平置中*/
+                flex-direction: column;
+                align-items: center; /*垂直置中*/
+                width: 40%;
+                margin: 1vw;
+                
+            }
+            img{
+                width: 100%;
+            }
+            h1{
+                font-size: 2vw;
+            }
+            p{
+                font-size: 1vw;
+                margin-top: 1vw;
+            }
+        }
+
+
+        #video{
+            margin: 2vw;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            iframe{
+                margin: 3vw;
+            }
+        }
+    }
+
+    footer{
+        height: 50px;
+        display: flex;
+        color: white;
+        background-color: rgb(65, 94, 41);
+        justify-content: center;
+        z-index: 5;
+        div{
+            margin: 1vw 0vw;
+        }
+    }
+}
